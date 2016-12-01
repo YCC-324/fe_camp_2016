@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-image: url("../images/bw-bg.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .img-box {
+            width: 560px;
+            height: 600px;
+            position: relative;
+        }
+        .img-box img{
+            position: absolute;
+            width:560px;
+            height:600px;
+            top: 0;
+            left:100px;
+        }
+        .btn-box1{
+            position: absolute;
+            width: 500px;
+            height: 100px;
+            left: 700px;
+            top: 300px;
+            margin: 30px auto;
+        }
+        .btn-box1 button{
+            width:400px;
+            height: 40px;
+            border: 1px solid #89cbdb;
+            background-image: url("../images/btn-blue.png");
+            border-radius: 5px;
+            font-size: 28px;
+            margin: 15px;
+            color: #4c8bf5;
+            outline: none;
+        }
+        .btn-box2{
+            position: absolute;
+            width: 500px;
+            height: 100px;
+            left: 700px;
+            top: 200px;
+            margin: 30px auto;
+        }
+        .btn-box2 button{
+            width:400px;
+            height: 40px;
+            border: 1px solid #89cbdb;
+            background-image: url("../images/btn-gray.png");
+            border-radius: 5px;
+            font-size: 28px;
+            margin: 15px;
+            color: #4c8bf5;
+            outline: none;
+        }
+    </style>
+
+</head>
+<body>
+<div id="bg1" style=" background-size: cover; background-image:url(../images/bw-bg.png);">
+<div class="img-box">
+    <img id="img" src="../images/bw.gif">
+</div>
+<div class="btn-box1">
+    <button id="bw"  onclick="">巴卫</button>
+</div>
+<div class="btn-box2">
+    <button id="xx">小新</button>
+</div>
+</div>
+<script language="JavaScript" type="text/javascript">
+    var btn1=document.getElementById("bw");
+    var btn2=document.getElementById("xx");
+    var img=document.getElementById("img");
+    var a=document.getElementById("bg1");
+    btn1.onclick=function () {
+        img.setAttribute("src","../images/bw.gif");
+        a.style.backgroundImage="url(../images/bw-bg.png)";
+        btn1.style.backgroundImage="url(../images/btn-blue.png)";
+        btn2.style.backgroundImage="url(../images/btn-gray.png)"
+        };
+    btn2.onclick=function () {
+        img.setAttribute("src","../images/xx.gif");
+        a.style.backgroundImage="url(../images/xx-bg.png)";
+        btn1.style.backgroundImage="url(../images/btn-gray.png)";
+        btn2.style.backgroundImage="url(../images/btn-blue.png)"
+    }
+</script>
+</body>
+</html>
